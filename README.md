@@ -1,5 +1,8 @@
 # BitGo Express ColdFusion Client
 
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/edyionescu/bitgo-express-cf-client)
+![GitHub License](https://img.shields.io/github/license/edyionescu/bitgo-express-cf-client)
+
 Simple ColdFusion client for interacting with the [BitGo platform](https://developers.bitgo.com/reference/), along with a Docker setup for running the BitGo Express service locally.
 
 ## Configuration
