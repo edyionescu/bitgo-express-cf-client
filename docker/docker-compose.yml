@@ -1,0 +1,7 @@
+services:
+  bitgo-express:
+    image: bitgo/express:latest
+    privileged: true
+    restart: unless-stopped
+    stdin_open: true
+    tty: true

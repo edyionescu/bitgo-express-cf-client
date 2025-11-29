@@ -1,0 +1,26 @@
+{
+  "name": "bitgo-express-server",
+  "version": "1.0.0",
+  "description": "BitGo Express local signing server (REST API)",
+  "private": true,
+  "scripts": {
+    "up": "docker compose up -d && npm run list",
+    "up:dev": "docker compose -f docker-compose.yml -f docker-compose.dev.yml up -d && npm run list",
+    "up:dev:mac": "docker compose -f docker-compose.yml -f docker-compose.dev.yml -f docker-compose.mac.yml up -d && npm run list",
+    "down": "docker compose down",
+    "start": "docker compose start bitgo-express",
+    "stop": "docker compose stop bitgo-express",
+    "list": "docker ps",
+    "list-all": "docker ps -a",
+    "l": "npm run list",
+    "la": "npm run list-all",
+    "log": "docker logs --tail 100 --follow --timestamps bitgo-express-prod",
+    "log:dev": "docker logs --tail 100 --follow --timestamps bitgo-express-dev",
+    "env": "docker exec bitgo-express-prod printenv | grep BITGO",
+    "env:dev": "docker exec bitgo-express-dev printenv | grep BITGO",
+    "ping": "curl localhost:3090/api/v2/pingexpress",
+    "ping:dev": "curl localhost:3080/api/v2/pingexpress"
+  },
+  "author": "Edy Ionescu <errorsmith@gmail.com>",
+  "license": "MIT"
+}

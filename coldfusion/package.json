@@ -1,0 +1,16 @@
+{
+  "name": "bitgo-express-client",
+  "private": true,
+  "scripts": {
+    "start": "box config set modules.commandbox-dotenv.checkEnvPreServerStart=false && box server start",
+    "stop": "box config clear modules.commandbox-dotenv && box server stop",
+    "status": "box server status",
+    "lint": "box cflint reportLevel=ERROR",
+    "watch": "box cfformat watch --cfm",
+    "check": "box cfformat check --cfm",
+    "format": "box cfformat run --cfm  --overwrite",
+    "tag-check": "box cfformat tag-check"
+  },
+  "author": "Edy Ionescu <errorsmith@gmail.com>",
+  "license": "MIT"
+}

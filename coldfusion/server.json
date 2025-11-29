@@ -1,0 +1,12 @@
+{
+  "name": "bitgo-express-client",
+  "openBrowserURL": "http://localhost:8080/usage.cfm",
+  "app": {
+    "cfengine": "lucee@5.4.8.2"
+  },
+  "web": {
+    "http": {
+      "port": "8080"
+    }
+  }
+}

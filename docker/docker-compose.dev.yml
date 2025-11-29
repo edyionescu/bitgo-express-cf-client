@@ -1,0 +1,6 @@
+services:
+  bitgo-express:
+    container_name: bitgo-express-dev
+    ports:
+      - 3080:3080
+    env_file: .env.dev

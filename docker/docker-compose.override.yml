@@ -1,0 +1,6 @@
+services:
+  bitgo-express:
+    container_name: bitgo-express-prod
+    ports:
+      - 127.0.0.1:3090:3090
+    env_file: .env.prod

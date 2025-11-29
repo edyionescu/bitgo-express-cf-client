@@ -1,0 +1,3 @@
+services:
+  bitgo-express:
+    platform: linux/amd64
